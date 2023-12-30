@@ -1,11 +1,20 @@
 import './App.css';
+import React from 'react';
+import Header from './Header';
+import Navigation from './Navigation'; // Asegúrate de tener la ruta correcta al archivo Navigation.js
+import Main from './Main';
+import Footer from './Footer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      Página de inicio
+    <div>
+      <Header />
+      <Navigation /> {/* Agregamos el componente Navigation aquí */}
+      <Main />
+      {/* Otros componentes y contenido */}
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
